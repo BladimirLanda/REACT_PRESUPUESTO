@@ -44,9 +44,9 @@ function ExpenseDetail( { expense } : ExpenseDetailProps ) {
         <SwipeableList>
             {/*maxSwipe: Recorrido (max-1) leadingActions:Izquierdo trailingActions:Derecho*/}
             <SwipeableListItem maxSwipe={1} leadingActions={ leadingActions() } trailingActions={ trailingActions() } >
-                <div className="w-full p-10 border-b border-gray-200 shadow-lg bg-white flex gap-5 items-center">
+                <div className="w-full p-5 md:p-10 border-b border-gray-200 shadow-lg bg-white flex items-center gap-5">
                     <div>
-                        <img src={`icono_${categoryInfo.icon}.svg`} alt="icono-gasto" className="w-20"/>
+                        <img src={`icono_${categoryInfo.icon}.svg`} alt="icono-gasto" className="w-20 h-20"/>
                     </div>
 
                     <div className="flex-1 space-y-2">

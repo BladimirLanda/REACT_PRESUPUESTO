@@ -6,6 +6,7 @@ import BudgetTracker from "./components/BudgetTracker";
 import ExpenseModal from "./components/modals/ExpenseModal";
 import ExpenseList from "./components/ExpenseList";
 import FilterByCategory from "./components/FilterByCategory";
+import SuggestionModal from "./components/modals/SuggestionModal";
 
 function App() {
   //State
@@ -39,6 +40,8 @@ function App() {
           <ExpenseList />
           
           <ExpenseModal /> 
+
+          <SuggestionModal />
         </main>
       )}
     </>

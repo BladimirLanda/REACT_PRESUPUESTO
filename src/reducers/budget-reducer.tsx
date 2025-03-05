@@ -13,6 +13,10 @@ export type BudgetActions = {
     type: 'show-modal'
 } | {
     type: 'close-modal'
+}  | {
+    type: 'show-modal-two'
+} | {
+    type: 'close-modal-two'
 } | {
     type: 'add-expense',
     payload: {
@@ -46,6 +50,7 @@ export type BudgetActions = {
 export type BudgetState = {
     budget: number,
     modal: boolean,
+    modalSug: boolean,
     expenses: Expense[],
     editingId: Expense['id'],
     currentCategory: Category['id']
@@ -66,6 +71,7 @@ const initialExpenses = () : Expense[] => {
 export const initialState: BudgetState = {
     budget: initialBudget(),
     modal: false,
+    modalSug: false,
     expenses: initialExpenses(),
     editingId: '',
     currentCategory: ''
@@ -100,6 +106,20 @@ export const BudgetReducer = (state: BudgetState = initialState, actions: Budget
             ...state,
             modal: false,
             editingId: ''
+        }
+    }
+
+    if(actions.type === 'show-modal-two') {
+        return {
+            ...state,
+            modalSug: true
+        }
+    }
+
+    if(actions.type === 'close-modal-two') {
+        return {
+            ...state,
+            modalSug: false
         }
     }
 
