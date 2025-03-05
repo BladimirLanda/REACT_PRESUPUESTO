@@ -15,7 +15,6 @@ reutilizarla en diferentes componentes.
 import { useContext } from "react"
 import BudgetContext from "../context/BudgetContext"
 
-
 //useContext(): Hook de React que se utiliza para acceder al valor de un Contexto
 const useBudget = () => {
     return useContext(BudgetContext);
