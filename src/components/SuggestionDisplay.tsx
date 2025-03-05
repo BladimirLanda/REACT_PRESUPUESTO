@@ -68,8 +68,7 @@ function SuggestionDisplay() {
                 </CircularProgressbarWithChildren>
             </div>
 
-            <div className="position: absolute right-2 bottom-1 text-slate-400 text-[6.5px] 
-            font-normal text-right sm:text-[10px] md:text-xs sm:bottom-2">
+            <div className="mt-2 text-slate-400 font-normal text-right text-xs xs:mt-0">
                 <p>*Básicos: Alquiler, Servicos Públicos, Alimentos</p>
                 <p>*Deseos: Restaurante, Entretenimiento, Vestimenta</p>
                 <p>*Ahorro: Fondo de Pensión, Fondo de Emergencia</p>
